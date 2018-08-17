@@ -1,8 +1,6 @@
 body {
   background-color: #BC1C12;
-  animation-name: bgcolor;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+  animation: bgcolor 4s infinite;
   text-align: center;
   font-family: Orbitron;
 }
@@ -22,10 +20,9 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BC1C12;
   padding-top: 20px;
-  animation-name: color;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-  }
+  animation: color 4s infinite;
+  margin:auto 10px;
+}
 
 
 .header hr {
@@ -34,11 +31,13 @@ body {
 
 .hal {
   height:300px;
+  overflow: hidden;
 }
 
 .hal img {
   width: 300px;
   height:auto;
+  animation: imgsize 4s infinite;
 }
 
 .input-section {
@@ -49,9 +48,7 @@ label {
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: #BC1C12;
-  animation-name: color;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+  animation: color 4s infinite;
   font-size: 30px;
   margin-top: -20px;
 }
@@ -66,6 +63,9 @@ button {
   margin-top: 20px;
   background-color: #BC1C12;
   color: #040404;
+  animation: btncolor 4s infinite;
+  height: 60px;
+  width: 80px;
 }
 
 .output-area {
@@ -82,7 +82,7 @@ button {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BC1C12;
   animation-name: color;
-  animation-duration: 8s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   padding-top: 20px;
 }
@@ -101,24 +101,41 @@ button {
 
 @keyframes bgcolor {
   0% {
-    background-color: #BC1C12;
   }
   50% {
-    background-color: #000;
+    background-color: #FF2618;
   }
   100% {
-    background-color: #BC1C12;
   }
 }
 
 @keyframes color {
   0% {
-    -webkit-text-stroke-color: #BC1C12;
   }
   50% {
     -webkit-text-stroke-color: #FF2618;
   }
   100% {
-    -webkit-text-stroke-color: #BC1C12;
+  }
+}
+
+@keyframes btncolor {
+  0% {
+  }
+  50% {
+    background-color: #FF2618;
+    transform: scale(1.02);
+  }
+  100% {
+  }
+}
+
+@keyframes imgsize {
+  0% {
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
   }
 }
