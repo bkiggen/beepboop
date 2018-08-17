@@ -1,13 +1,26 @@
 body {
-  background-color: #000002;
+  background-color: #BC1C12;
   text-align: center;
   color: #d0c6c4;
   font-family: Orbitron;
 }
 
+.container1, .container2 {
+  background-color: black;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .header h1 {
   color: #BC1C12;
-  text-shadow: 1px 1px 1px #d0c6c4;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BC1C12;
+  padding-top: 20px;
 }
 
 .header hr {
@@ -23,27 +36,55 @@ body {
   height:auto;
 }
 
+.input-section {
+  padding-bottom: 20px;
+}
+
+label {
+  color: #BC1C12;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BC1C12;
+  font-size: 30px;
+  margin-top: -20px;
+}
+
+input {
+  background-color: #d0c6c4;
+  color: #040404;
+  border-color: #BC1C12;
+}
+
 button {
   margin-top: 20px;
   background-color: #BC1C12;
   color: #040404;
 }
 
-input {
-  background-color: #d0c6c4;
+.output-area {
+  padding-bottom: 30px;
+}
+
+.output-area p {
   color: #040404;
+}
+
+.output-area h2 {
+  color: #BC1C12;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #BC1C12;
+  padding-top: 20px;
 }
 
 .well {
   width: 50%;
   margin: auto;
   background-color: #d0c6c4;
+  text-align: left;
+  border: 1px solid BC1C12;
 }
 
-.output-area {
-  margin: 50px auto;
-}
-
-.output-area p {
-  color: #040404;
+.output-area hr {
+  border-color: black;
 }

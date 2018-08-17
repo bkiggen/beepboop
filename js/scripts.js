@@ -15,13 +15,12 @@ $(document).ready(function(){
     numberProcess();
     //add breaks to output
     for (var i = 0; i < numberOutput.length; i++){
-      answer += numberOutput[i] + "<br>";
+      answer += numberOutput[i] + "<br>" + "<hr>";
     };
     //output answer
     $("#answer").html(answer);
-    //scroll funtion and output size calculator
-    var scrollnum = numberOutput.length * numberOutput.length;
-    $('html, body').animate({scrollTop:$('.scrollto').offset().top}, scrollnum);
+    //scroll funtion
+    $('html, body').animate({scrollTop:$('.output-area').offset().top}, 2000);
   });
 });
 
