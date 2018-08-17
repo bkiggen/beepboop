@@ -4,8 +4,9 @@
 }
 
 body {
-  background-image: url("img/hal.jpg");
+  background-color: #000002;
   text-align: center;
+  color: #d0c6c4;
 }
 
 .output-area {
@@ -14,4 +15,33 @@ body {
 
 button {
   margin-top: 20px;
+}
+
+.hal {
+  height:300px;
+}
+img {
+  width: 300px;
+  height:auto;
+}
+
+.header h1 {
+  color: #d0c6c4;
+  text-shadow: 2px 2px 1px #BC1C12;
+}
+
+.header hr {
+  border-color: #d0c6c4;
+}
+
+.well {
+  background-color: #d0c6c4;
+}
+
+input {
+  background-color: #d0c6c4;
+}
+
+button {
+  background-color: #BC1C12;
 }
