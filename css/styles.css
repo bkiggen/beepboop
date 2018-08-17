@@ -47,7 +47,7 @@ body {
 
 label {
   -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #BC1C12;
   animation: color 4s infinite;
   font-size: 30px;
@@ -157,4 +157,5 @@ input {
     border: 2px solid #FF2618;
     animation: color 4s infinite;
   }
+
 }
