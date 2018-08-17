@@ -158,4 +158,13 @@ input {
     animation: color 4s infinite;
   }
 
+  label {
+    -webkit-text-fill-color: #BC1C12;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #BC1C12;
+    animation: color 4s infinite;
+    font-size: 30px;
+    margin-top: -20px;
+  }
+
 }
