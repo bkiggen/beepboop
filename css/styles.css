@@ -9,12 +9,12 @@ body {
   color: #d0c6c4;
 }
 
-.output-area {
-  margin-top: 50px;
-}
+
 
 button {
   margin-top: 20px;
+  background-color: #BC1C12;
+  color: #040404;
 }
 
 .hal {
@@ -26,8 +26,8 @@ img {
 }
 
 .header h1 {
-  color: #d0c6c4;
-  text-shadow: 2px 2px 1px #BC1C12;
+  color: #BC1C12;
+  text-shadow: 1px 1px 1px #d0c6c4;
 }
 
 .header hr {
@@ -40,8 +40,13 @@ img {
 
 input {
   background-color: #d0c6c4;
+  color: #040404;
 }
 
-button {
-  background-color: #BC1C12;
+.output-area {
+  margin: 50px auto;
+}
+
+.output-area p {
+  color: #040404;
 }
