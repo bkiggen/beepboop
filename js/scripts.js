@@ -16,19 +16,18 @@ $(document).ready(function(){
 
 function numberProcess() {
   for(var i = 0; i <= numberInput; i++){
-    if (i % 3 === 0){
+    if (i % 3 === 0 && i != 0){
 
       numberOutput.push("I'm sorry, Dave. I'm afraid I can't do that.");
       console.log(i + "multiple of 3");
 
     } else {
 
-      if (i.toString().match(/1*/)){
+      if (i.toString().indexOf('1') > -1){
         console.log(i + "its got a 1, boy");
         numberOutput.push("Boop!");
 
-      } else if (i.toString().match(/0*/)){
-        console.log("it's got a 0, boy");
+      } else if (i.toString().indexOf('0') > -1){
         numberOutput.push("Beep!");
       } else {
         numberOutput.push(i);
