@@ -2,13 +2,23 @@
 var numberInput;
 var numberOutput = [];
 
+
 //user interface logic
 $(document).ready(function(){
   $("#input-form").submit(function(event){
+    var answer = "";
+    //input
     event.preventDefault();
     numberInput = $("#number-input").val();
+    //call backend
     numberProcess();
-    $("#answer").html(numberOutput);
+    //add breaks to output
+    for (var i = 0; i < numberOutput.length; i++){
+      answer += numberOutput[i] + "<br>";
+    };
+    //output answer
+    $("#answer").html(answer);
+    console.log(answer)
   });
 });
 
@@ -16,6 +26,7 @@ $(document).ready(function(){
 //business logic
 
 function numberProcess() {
+  numberOutput = [];
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0 && i != 0){
       numberOutput.push(" 'I'm sorry, Dave. I'm afraid I can't do that.' ");
@@ -27,7 +38,6 @@ function numberProcess() {
       } else {
         numberOutput.push(i);
       }
-      console.log(numberOutput);
     };
   };
 };
