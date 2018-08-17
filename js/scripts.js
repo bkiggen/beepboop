@@ -8,6 +8,7 @@ $(document).ready(function(){
     event.preventDefault();
     numberInput = $("#number-input").val();
     numberProcess();
+    $("#answer").html(numberOutput);
   });
 });
 
@@ -17,15 +18,16 @@ $(document).ready(function(){
 function numberProcess() {
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0 && i != 0){
-      numberOutput.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      numberOutput.push(" 'I'm sorry, Dave. I'm afraid I can't do that.' ");
     } else {
       if (i.toString().indexOf('1') > -1){
-        numberOutput.push("Boop!");
+        numberOutput.push(" 'Boop!' ");
       } else if (i.toString().indexOf('0') > -1){
-        numberOutput.push("Beep!");
+        numberOutput.push(" 'Beep!' ");
       } else {
         numberOutput.push(i);
       }
+      console.log(numberOutput);
     };
   };
-}
+};
