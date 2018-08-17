@@ -32,11 +32,11 @@ _This program is designed to receive a number input from the user and return a r
 
 * The program replaces 1 with "Boop!"
   * Example Input: 1
-  * Example Output: "Boop!"
+  * Example Output: "Beep!" "Boop!"
 
 * The program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that."
   * Example Input: 3
-  * Example Output: "I'm sorry, Dave. I'm afraid I can't do that."
+  * Example Output: "Beep!" "Boop!" "I'm sorry, Dave. I'm afraid I can't do that."
 
 
 ## Support and contact details

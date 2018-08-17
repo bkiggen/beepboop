@@ -1,0 +1,17 @@
+.well {
+  width: 50%;
+  margin: auto;
+}
+
+body {
+  background-image: url("img/hal.jpg");
+  text-align: center;
+}
+
+.output-area {
+  margin-top: 50px;
+}
+
+button {
+  margin-top: 20px;
+}

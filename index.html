@@ -12,16 +12,23 @@
   <body>
     <div class="container">
       <div class="input-area">
-        <h1 class="jumbotron">Beep-Boop Your Favorite Number!</h1>
+        <div class="page-header">
+          <h1 "header">Beep-Boop Your Favorite Number!</h1>
+        </div>
         <form id="input-form">
-          <label for="number-input"></label>
+          <label for="number-input">Enter a number:</label>
+          <br>
           <input type="number" name="number-input" id="number-input" value="">
-          <button type="submit" name="button">GO!</button>
+          <br>
+          <button type="submit" class="btn btn-info">GO!</button>
         </form>
       </div>
+      <hr>
       <div class="output-area">
         <h3>Your Beep-Booping Number:</h3>
-        <p id="answer"></p>
+        <div class="well">
+          <p id="answer"></p>
+        </div>
       </div>
 
 
