@@ -1,7 +1,9 @@
 body {
   background-color: #BC1C12;
+  animation-name: bgcolor;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
   text-align: center;
-  color: #d0c6c4;
   font-family: Orbitron;
 }
 
@@ -16,12 +18,15 @@ body {
 }
 
 .header h1 {
-  color: #BC1C12;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BC1C12;
   padding-top: 20px;
-}
+  animation-name: color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  }
+
 
 .header hr {
   border-color: #d0c6c4;
@@ -41,10 +46,12 @@ body {
 }
 
 label {
-  color: #BC1C12;
   -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .1px;
   -webkit-text-stroke-color: #BC1C12;
+  animation-name: color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
   font-size: 30px;
   margin-top: -20px;
 }
@@ -74,6 +81,9 @@ button {
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BC1C12;
+  animation-name: color;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
   padding-top: 20px;
 }
 
@@ -87,4 +97,28 @@ button {
 
 .output-area hr {
   border-color: black;
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: #BC1C12;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #BC1C12;
+  }
+}
+
+@keyframes color {
+  0% {
+    -webkit-text-stroke-color: #BC1C12;
+  }
+  50% {
+    -webkit-text-stroke-color: #FF2618;
+  }
+  100% {
+    -webkit-text-stroke-color: #BC1C12;
+  }
 }
