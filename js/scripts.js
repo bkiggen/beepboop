@@ -17,15 +17,21 @@ $(document).ready(function(){
 function numberProcess() {
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0){
-      
-    } else if {
-
+      numberOutput.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      console.log("multiple of 3");
     } else {
+      if (i.toString().match(/1*/g)){
+        console.log("its got a 1, boy");}
+      // } else if (i.toString.match(/0/g)){
+      //   console.log("it's got a 0, boy");
+      // }
+    };
 
-    } else {
-      console.log("WHAT'S WRONG?")
-    }
-    numberOutput.push(i);
+
+
+
+
+    // numberOutput.push(i);
 
   };
 }
