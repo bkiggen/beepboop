@@ -1,28 +1,8 @@
-.well {
-  width: 50%;
-  margin: auto;
-}
-
 body {
   background-color: #000002;
   text-align: center;
   color: #d0c6c4;
-}
-
-
-
-button {
-  margin-top: 20px;
-  background-color: #BC1C12;
-  color: #040404;
-}
-
-.hal {
-  height:300px;
-}
-img {
-  width: 300px;
-  height:auto;
+  font-family: Orbitron;
 }
 
 .header h1 {
@@ -34,13 +14,30 @@ img {
   border-color: #d0c6c4;
 }
 
-.well {
-  background-color: #d0c6c4;
+.hal {
+  height:300px;
+}
+
+.hal img {
+  width: 300px;
+  height:auto;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #BC1C12;
+  color: #040404;
 }
 
 input {
   background-color: #d0c6c4;
   color: #040404;
+}
+
+.well {
+  width: 50%;
+  margin: auto;
+  background-color: #d0c6c4;
 }
 
 .output-area {

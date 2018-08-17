@@ -5,6 +5,7 @@ var numberOutput = [];
 
 //user interface logic
 $(document).ready(function(){
+  //on submit
   $("#input-form").submit(function(event){
     var answer = "";
     //input
@@ -18,10 +19,11 @@ $(document).ready(function(){
     };
     //output answer
     $("#answer").html(answer);
-    console.log(answer)
+    //scroll funtion and output size calculator
+    var scrollnum = numberOutput.length * numberOutput.length;
+    $('html, body').animate({scrollTop:$('.scrollto').offset().top}, scrollnum);
   });
 });
-
 
 //business logic
 
