@@ -9,7 +9,7 @@ body {
   background-color: black;
   width: 90%;
   max-width: 800px;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -37,6 +37,7 @@ body {
 .hal img {
   width: 300px;
   height:auto;
+  transform: scale(1.35);
   animation: imgsize 4s infinite;
 }
 
@@ -59,13 +60,17 @@ input {
   border-color: #BC1C12;
 }
 
-button {
+.btn {
   margin-top: 20px;
   background-color: #BC1C12;
-  color: #040404;
+  font-size: 25px;
+  -webkit-text-fill-color: #BC1C12;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+
   animation: btncolor 4s infinite;
   height: 60px;
-  width: 80px;
+  width: 120px;
 }
 
 .output-area {
@@ -81,9 +86,7 @@ button {
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #BC1C12;
-  animation-name: color;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: color 4s infinite;
   padding-top: 20px;
 }
 
@@ -93,10 +96,7 @@ button {
   background-color: #d0c6c4;
   text-align: left;
   border: 1px solid BC1C12;
-}
-
-.output-area hr {
-  border-color: black;
+  margin-top: 20px;
 }
 
 @keyframes bgcolor {
@@ -134,8 +134,27 @@ button {
   0% {
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.4);
   }
   100% {
+  }
+}
+
+/* Media Query for phones */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: black;
+    animation: none;
+  }
+
+  .container1, .container2 {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .well {
+    width: 80%;
+    border: 2px solid #FF2618;
+    animation: color 4s infinite;
   }
 }
