@@ -1,6 +1,7 @@
 //global variables
 var numberInput;
 var numberOutput = [];
+var nameInput;
 
 
 //user interface logic
@@ -11,6 +12,7 @@ $(document).ready(function(){
     //input
     event.preventDefault();
     numberInput = $("#number-input").val();
+    nameInput = $("#name").val();
     //call backend
     numberProcess();
     //add breaks to output
@@ -30,7 +32,7 @@ function numberProcess() {
   numberOutput = [];
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0 && i != 0){
-      numberOutput.push(" 'I'm sorry, Dave. I'm afraid I can't do that.' ");
+      numberOutput.push(" 'I'm sorry, " + nameInput + ". I'm afraid I can't do that.' ");
     } else {
       if (i.toString().indexOf('1') > -1){
         numberOutput.push(" 'Boop!' ");
