@@ -15,7 +15,6 @@ body {
   margin-bottom: 30px;
   border: 2px solid #BC1C12;
   box-shadow: 0 0 0 2px black;
-  animation: divsize 4s infinite;
 }
 
 .header h1 {
@@ -149,16 +148,6 @@ input {
   }
 }
 
-@keyframes divsize {
-  0% {
-  }
-  50% {
-    width: 91%;
-  }
-  100% {
-  }
-}
-
 /* Media Query for phones */
 @media screen and (max-width: 500px) {
   body {
@@ -169,7 +158,6 @@ input {
   .container1, .container2 {
     width: 100%;
     margin-top: 0px;
-    animation: none;
     border: none;
   }
 
