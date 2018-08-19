@@ -132,7 +132,8 @@ input {
   }
   50% {
     background-color: #FF2618;
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
+    box-shadow: 0 0 30px #FF2618;
   }
   100% {
   }
