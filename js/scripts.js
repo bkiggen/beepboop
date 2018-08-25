@@ -1,7 +1,7 @@
 //global variables
-var numberInput;
-var numberOutput = [];
-var nameInput;
+// var numberInput;
+// var numberOutput = [];
+// var nameInput;
 
 
 //user interface logic
@@ -11,10 +11,10 @@ $(document).ready(function(){
     var answer = "";
     //input
     event.preventDefault();
-    numberInput = $("#number-input").val();
+    var numberInput = $("#number-input").val();
     nameInput = $("#name").val();
     //call backend
-    numberProcess();
+    numberProcess(numberInput);
     //add breaks to output
     for (var i = 0; i < numberOutput.length; i++){
       answer += numberOutput[i] + "<br>" + "<hr>";
@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 //business logic
 
-function numberProcess() {
+function numberProcess(numberInput) {
   numberOutput = [];
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0 && i != 0){
