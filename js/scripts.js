@@ -14,7 +14,7 @@ $(document).ready(function(){
     var numberInput = $("#number-input").val();
     nameInput = $("#name").val();
     //call backend
-    numberProcess(numberInput);
+    var numberOutput = numberProcess(numberInput);
     //add breaks to output
     for (var i = 0; i < numberOutput.length; i++){
       answer += numberOutput[i] + "<br>" + "<hr>";
@@ -29,7 +29,7 @@ $(document).ready(function(){
 //business logic
 
 function numberProcess(numberInput) {
-  numberOutput = [];
+  var numberOutput = [];
   for(var i = 0; i <= numberInput; i++){
     if (i % 3 === 0 && i != 0){
       numberOutput.push(" 'I'm sorry, " + nameInput + ". I'm afraid I can't do that.' ");
@@ -43,4 +43,5 @@ function numberProcess(numberInput) {
       }
     };
   };
+  return numberOutput;
 };
